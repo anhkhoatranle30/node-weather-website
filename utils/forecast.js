@@ -14,7 +14,7 @@ const forecast = (long, lat, callback) => {
       const data = body.current;
       callback(
         undefined,
-        `It is ${data.temperature} degrees. But it feels like ${data.feelslike} degrees out there.`
+        `${data.weather_descriptions}. It is ${data.temperature} degrees. But it feels like ${data.feelslike} degrees out there.`
       );
     }
   });
